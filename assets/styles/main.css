@@ -13,6 +13,8 @@
     --blue: #4B88A2;
     --blue-light: #7EADC8;
     --gray: #D3D4D9;
+
+    --token: #f49e07;
 }
 
 html, body, .app {
