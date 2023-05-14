@@ -2,7 +2,7 @@ html, body {
     background-color: var(--white);
 }
 
-.dashboard {
+.vocabulary {
     height: 100%;
 }
 
@@ -103,53 +103,66 @@ header {
     width: 30px;
 }
 
-.row {
-    width: 100%;
+.levels {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0 10px;
 }
 
-.column { width: 50%; }
+.level {
+    font-size: 3rem;
+    padding: .5em 1.5em;
+    border: 1px solid var(--gray);
+    font-weight: 500;
+    width: 20%;
+    margin-right: 5px;
+    margin-top: 15px;
+}
 
-.topics {
+.active {
+    background-color: var(--blue);
+    color: #FFF;
+}
+
+.lessons {
+    margin: 15px;
+}
+
+.lesson {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 25px;
-}
+    flex-direction: row;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    box-shadow: 10px 2px 12px 1px var(--gray);
 
-.topics-list {
-    height: 100%;
-}
+    padding: 2em;
 
-.topics-list .row {
-    margin-bottom: 25px;
-}
-
-.topics-list .row .column {
-    margin-right: 15px;
-}
-
-.topic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
-.topic-img img {
-    width: 80px;
-    border: 3px solid var(--gray);
-    padding: .5em;
-    border-radius: 100%;
-    box-shadow: 10px 2px 12px 1px var(--gray);
+.lesson-img {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
 }
 
-.topic-text {
-    font-size: 1.8rem;
-    font-weight: 550;
+.lesson-img img {
+    width: 50px;
+}
+
+.lesson-description {
+    width: 75%;
+}
+
+.lesson-description-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.lesson-description-note {
+    font-size: 1.5rem;
 }
