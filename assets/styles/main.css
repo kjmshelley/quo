@@ -11,6 +11,7 @@
     --black: #252627;
     --white: #FFF9FB;
     --blue: #4B88A2;
+    --blue-light: #7EADC8;
     --gray: #D3D4D9;
 }
 
@@ -21,7 +22,7 @@ html, body, .app {
 }
 
 html, body {
-    background-color: var(--gray);
+    background-color: var(--blue-light);
 }
 
 .app {
@@ -52,7 +53,6 @@ html, body {
 .header-title {
     font-size: 5rem;
     font-weight: 900;
-    color: var(--black);
     text-align: center;
 }
 
@@ -111,7 +111,7 @@ html, body {
 }
 
 .crimson-red:hover,
-.crimson-red:hover a:link {
+.crimson-red a:link:hover {
     background-color: var(--red-light);
     border: 1px solid var(--red-light);
     color: #FFF;
