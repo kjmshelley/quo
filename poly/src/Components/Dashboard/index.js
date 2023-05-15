@@ -1,49 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poly Lingua Dashboard</title>
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="assets/styles/dashboard.css" />
-</head>
-<body>
-    <main class="dashboard">
-        <header>
-            <div class="header-border">
-                <div class="header-img">
-                    <div>
-                        <img src="assets/img/animal.png" />
-                    </div>
-                </div>
-                <div class="header-info">
-                    <div class="header-info-language">
-                        <div>
-                            <img src="assets/img/china.png" />
-                        </div>
-                    </div>
-                    <div class="header-info-tokens">
-                        <div>
-                            <img src="assets/img/dollar.png" />
-                        </div>
-                        <div class="header-info-tokens-amount">
-                            <span>64</span>
-                        </div>
-                    </div>
-                    <div class="header-info-level">
-                        <div class="header-info-level-text">A1 - Newbie</div>
-                        <div class="header-info-level-img">
-                            <img src="assets/img/down-arrow.png" />
-                        </div>
-                    </div>
-                    <div class="header-profile">
-                        <div>
-                            <img src="assets/img/user.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+import "./style.css";
+import { Outlet, Link } from "react-router-dom";
+
+function Dashboard() {
+    return (
         <div class="topics">
             <div class="topics-list">
                 <div class="row">
@@ -92,14 +51,16 @@
                         </div>
                     </div>
                     <div class="column tea-shop">
-                        <div class="topic">
-                            <div class="topic-img">
-                                <img src="assets/img/diet.png" />
+                        <Link to={`learning/food`}>
+                            <div class="topic">
+                                <div class="topic-img">
+                                    <img src="assets/img/diet.png" />
+                                </div>
+                                <div class="topic-text">
+                                    <span>Food</span>
+                                </div>
                             </div>
-                            <div class="topic-text">
-                                <span>Food</span>
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 
@@ -160,15 +121,9 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>
         </div>
-        <footer>
+    )
+}
 
-        </footer>
-    </main>
-
-    <script>
-        document.querySelector(".tea-shop").addEventListener("click", evt => window.location.href = "/vocabulary.html");
-    </script>
-</body>
-</html>
+export default Dashboard;

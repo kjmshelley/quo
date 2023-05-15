@@ -1,0 +1,24 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+
+  --red: #BB0A21;
+  --red-light: #F42A45; 
+  --black: #252627;
+  --white: #FFF9FB;
+  --blue: #4B88A2;
+  --blue-light: #7EADC8;
+  --gray: #D3D4D9;
+
+  --token: #f49e07;
+}
+
+html, body, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
