@@ -1,10 +1,35 @@
-import "./style.css";
+import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import { getCategories } from "./data";
+import "./style.css";
+
+function displayCategory(d) {
+    return (
+        <div className="row">
+            <div className="column">
+                <div className="topic">
+                    <div className="topic-img">
+                        <img src={`assets/img/${d.img}`} alt={d.name} />
+                    </div>
+                    <div className="topic-text">
+                        <span>{d.name}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 function Dashboard() {
+    const [categories, setCategories] = useState(getCategories());
+
     return (
         <div class="topics">
             <div class="topics-list">
+                { categories.map(c => displayCategory(c)) }
+            </div>
+        </div>
                 <div class="row">
                     <div class="column">
                         <div class="topic">
