@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Dashboard from './Components/Dashboard';
-import Food from "./Components/Food";
+import Lesson from "./Components/Lesson";
+import Header from "./Components/Header";
 
 import {
   createBrowserRouter,
@@ -13,12 +14,15 @@ import {
 const router = createBrowserRouter([
   { path: "/", element: <App />, },
   { path: "/dashboard", element: <Dashboard />, },
-  { path: "/learning/food", element: <Food />, },
+  { path: "/lesson/:topic", element: <Lesson />, },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <main className="App">
+      <Header />
+      <RouterProvider router={router} />
+    </main>
   </React.StrictMode>
 );
