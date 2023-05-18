@@ -13,7 +13,7 @@ function displayTopic(d) {
             <Link to={`${d.link}`}>
                 <div className="topic">
                     <div className="topic-img">
-                        <img src={`assets/img/${d.img}`} alt={d.name} />
+                        <img src={`/assets/img/${d.img}`} alt={d.name} />
                     </div>
                     <div className="topic-text">
                         <span>{d.name}</span>
