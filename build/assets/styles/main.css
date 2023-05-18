@@ -1,0 +1,141 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+
+    --red: #BB0A21;
+    --red-light: #F42A45; 
+    --black: #252627;
+    --white: #FFF9FB;
+    --blue: #4B88A2;
+    --blue-light: #7EADC8;
+    --gray: #D3D4D9;
+
+    --token: #f49e07;
+}
+
+html, body, .app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: var(--blue-light);
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-welcome {
+    width: 30%;
+    height: 70%;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+
+    padding: 4em 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.quo-image {
+    display: flex;
+    justify-content: center;
+}
+.quo-image img {
+    width: 40%;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 1em;
+    margin: .5em 0;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+
+    font-size: 1.8rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button a:link {
+
+}
+
+.crimson-red,
+.crimson-red a:link,
+.crimson-red a:visited
+{
+    background-color: var(--red);
+    color: #FFF;
+    font-weight: 600;
+    border: 1px solid var(--red);
+    text-decoration: none;
+}
+
+.crimson-red:hover {
+    background-color: var(--red-light);
+    border: 1px solid var(--red-light);
+}
+
+.crimson-red:hover,
+.crimson-red a:link:hover {
+    background-color: var(--red-light);
+    border: 1px solid var(--red-light);
+    color: #FFF;
+}
+
+.snow-white {
+    border: 1px solid var(--gray);
+}
+
+.snow-white,
+.snow-white a:link,
+.snow-white a:visited
+{
+    background-color: var(--white);
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.snow-white:hover,
+.snow-white:hover a:link {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    color: #FFF;
+}
