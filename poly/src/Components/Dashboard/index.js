@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
-import data from "./data";
+import data from "../../data";
 import "./style.css";
 
 const getCategories = data.getCategories;

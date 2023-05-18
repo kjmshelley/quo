@@ -1,4 +1,4 @@
-function Wrong() {
+function Wrong({onNextQuestion}) {
     return (
         <div className="answer-results answer-results-wrong">
             <div className="answer-results-left">
@@ -8,7 +8,7 @@ function Wrong() {
                 <div className="answer-results-wrong-msg">Incorrect</div>
             </div>
             <div className="answer-results-right">
-                <button>Continue</button>
+                <button onClick={onNextQuestion}>Continue</button>
             </div>
         </div>
     );

@@ -48,11 +48,11 @@ img {
 
 .prompt-question {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 .prompt-value {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: left;
     
 }
@@ -69,23 +69,32 @@ img {
 }
 
 .continue {
-    border-radius: 10px;
-    border: 1px solid var(--continue);
-    background-color: var(--continue);
-    color: #FFF;
     font-size: 1.5rem;
     text-align: center;
 }
 
 .continue button {
-    border: 1px solid var(--continue);
-    background-color: #FFF;
+    border-radius: 10px;
+    border: 1px solid var(--green-dark);
+    background-color: var(--green-dark);
     padding: 1em 2em;
     color: #FFF;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 900;
     width: 100%;
     height: 100%;
+    box-shadow: 0px 5px 0px 0px var(--green-dark2);
+    cursor: pointer;
 }
+
+.continue button:active {
+    border: 1px solid var(--green-dark2);
+    background-color: var(--green-dark2);
+    color: #FFF;
+    box-shadow: 0px 5px 0px 0px var(--green-dark);
+    cursor: pointer;
+}
+
 
 .multiple-choice {
     
@@ -94,11 +103,26 @@ img {
 .answer {
     font-size: 1.8rem;
     padding: 1em 2em;
-    margin-bottom: .3em;
+    margin-bottom: .5em;
     border-radius: 10px;
     border: 2px solid var(--gray);
 
+    cursor: pointer;
     box-shadow: 10px 0px 12px 0px var(--gray);
+}
+
+.answer:hover {
+    background-color: var(--answer-selected);
+    border: 2px solid var(--answer-selected);
+    color: var(--blue);
+    box-shadow: 0px 5px 0px 0px #82DAFF
+}
+
+.answer-selected {
+    background-color: var(--answer-selected);
+    border: 2px solid var(--answer-selected);
+    color: var(--blue);
+    box-shadow: 0px 5px 0px 0px #82DAFF
 }
 
 
@@ -175,6 +199,17 @@ img {
     border: 1px solid var(--red-light);
     box-shadow: 0px 5px 0px 0px var(--red);
 }
+
+.verified {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.verified img {
+    width: 30em;
+}
+
 /* 
 .answer-results-right button {
     color: #FFF;

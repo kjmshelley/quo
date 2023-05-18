@@ -8,9 +8,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Verified from './Components/Lesson/Results/Verified';
 
 const router = createBrowserRouter([
   { path: "/", element: <Dashboard />, },
+  { path: "/lesson/results/verified", element: <Verified />, },
   { path: "/lesson/:topic", element: <Lesson />, },
 ]);
 
