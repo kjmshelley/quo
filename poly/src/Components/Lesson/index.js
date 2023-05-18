@@ -1,5 +1,9 @@
-import "./style.css";
 import { useState } from "react";
+
+import "./style.css";
+
+import Correct from "./Results/Correct";
+import Wrong from "./Results/Wrong";
 
 function Lesson() {
     const [progressValue, setProgressValue] = useState(0);
@@ -8,17 +12,18 @@ function Lesson() {
     };
 
     return (
-        <div class="lesson">
-            <div className="choice-app">
-                <div className="progress-bar">
-                    <div className="progress-bar-start">
-                        <img src="/assets/img/close.png" alt="close" />
-                    </div>
-                    <progress className="progress-bar-progresss" value={`${progressValue}`} max="100"> 32% </progress>
-                    <div className="progress-bar-end">
-                        <img src="/assets/img/dollar.png" alt="dollar" />
-                    </div>
+        <div className="lesson">
+            <div className="progress-bar">
+                <div className="progress-bar-start">
+                    <img src="/assets/img/cross.png" alt="close" />
                 </div>
+                <progress className="progress-bar-progresss" value={`${progressValue}`} max="100"> 32% </progress>
+                <div className="progress-bar-end">
+                    <img src="/assets/img/dollar.png" alt="dollar" />
+                </div>
+            </div>
+
+            <div className="choice-app">
                 <div className="choice-body">
                     <div className="prompt">
                         <div className="prompt-question">
@@ -46,6 +51,9 @@ function Lesson() {
                     </div>
                 </div>
             </div>
+
+            { /* <Correct /> */ }
+            <Wrong />
         </div>
     )
 }

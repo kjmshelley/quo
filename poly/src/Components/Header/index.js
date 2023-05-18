@@ -6,18 +6,18 @@ function Header() {
             <div className="header-border">
                 <div className="header-img">
                     <div>
-                        <img src="assets/img/animal.png" alt="Poly Logo" />
+                        <img src="/assets/img/animal.png" alt="Poly Logo" />
                     </div>
                 </div>
                 <div className="header-info">
                     <div className="header-info-language">
                         <div>
-                            <img src="assets/img/china.png" alt="Chinese Language" />
+                            <img src="/assets/img/china.png" alt="Chinese Language" />
                         </div>
                     </div>
                     <div className="header-info-tokens">
                         <div>
-                            <img src="assets/img/dollar.png" alt="Tokens" />
+                            <img src="/assets/img/dollar.png" alt="Tokens" />
                         </div>
                         <div className="header-info-tokens-amount">
                             <span>64</span>
@@ -26,12 +26,12 @@ function Header() {
                     <div className="header-info-level">
                         <div className="header-info-level-text">A1 - Newbie</div>
                         <div className="header-info-level-img">
-                            <img src="assets/img/down-arrow.png" alt="Down" />
+                            <img src="/assets/img/down-arrow.png" alt="Down" />
                         </div>
                     </div>
                     <div className="header-profile">
                         <div>
-                            <img src="assets/img/user.png" alt="Profile" />
+                            <img src="/assets/img/user.png" alt="Profile" />
                         </div>
                     </div>
                 </div>
