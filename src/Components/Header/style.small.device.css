@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+    .header-img {
+        width: 20%;
+    }
+
+    .header-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+    }
+}
