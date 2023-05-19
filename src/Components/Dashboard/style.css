@@ -13,7 +13,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .topics-list {
@@ -21,7 +21,7 @@
 }
 
 .topics-list .row {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .topics-list .row .column {

@@ -5,7 +5,7 @@ header {
 
 .header-border {
     height: 100%;
-    margin: 10px;
+    padding: 1em;
     display: flex;
     flex-direction: row;
 }
