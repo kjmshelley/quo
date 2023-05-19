@@ -5,7 +5,6 @@ import data from "../../data";
 import "./style.css";
 
 const getCategories = data.getCategories;
-console.log(data.getCategories());
 
 function displayTopic(d) {
     return (

@@ -1,3 +1,4 @@
+import "./style.small.device.css";
 import "./style.css";
 
 function Header() {
@@ -12,7 +13,7 @@ function Header() {
                 <div className="header-info">
                     <div className="header-info-language">
                         <div>
-                            <img src="/assets/img/china.png" alt="Chinese Language" />
+                            <img src="/assets/img/china2.png" alt="Chinese Language" />
                         </div>
                     </div>
                     <div className="header-info-tokens">
